@@ -7,8 +7,20 @@ let employee= {
     name: "kumar",
     age:30,
     details: function(){
-        return this.name+this.age;
+        console.log(this.name+this.age);
     }
 };
 
+employee.details();
+
+
+function employee(name,age){
+    return {
+        detals: function(){
+            console.log(name+age);
+        }
+    };
+}
+
+const employee = createcircle('kumar',30)
 employee.details();
